@@ -52,17 +52,17 @@ Access Control
 ```
 rule Artist {
     description: "Allow artists to see all requests"
-    participant(i): "org.acme.artistmarket.Artist"
+    participant(a): "org.acme.artistmarket.Artist"
     operation: READ
-    resource(a): "org.acme.artistmarket.Request"
+    resource(r): "org.acme.artistmarket.Request"
     action: ALLOW
 }
 rule Buyer {
     description: "Allow buyer to see their commissions"
-    participant(i): "org.acme.artistmarket.Buyer"
+    participant(b): "org.acme.artistmarket.Buyer"
     operation: READ
-    resource(a): "org.acme.artistmarket.Commission"
-    condition: (a.buyer.email == i.email)
+    resource(c): "org.acme.artistmarket.Commission"
+    condition: (c.buyer.email == b.email)
     action: ALLOW
 }
 ```
