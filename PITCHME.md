@@ -11,7 +11,6 @@ Model
 
 ```
 participant Buyer identified by email { ...  }
-
 participant Artist identified by email { ...  }
 
 asset Request identified by requestId {
@@ -21,7 +20,6 @@ asset Request identified by requestId {
     --> Buyer buyer
     --> Artist artist
 }
-
 asset Commission identified by comissionId {
     o String comissionId
     o String url
@@ -29,10 +27,6 @@ asset Commission identified by comissionId {
     --> Artist artist
     --> Request request
 }
-
-transaction RequestTx { o Request request }
-
-transaction CommissionTx { o Commission commission }
 ```
 
 #HSLIDE
