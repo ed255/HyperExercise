@@ -45,10 +45,8 @@ rule Artist {
     participant(i): "org.acme.artistmarket.Artist"
     operation: READ
     resource(a): "org.acme.artistmarket.Request"
-    condition: (true)
     action: ALLOW
 }
-
 rule Buyer {
     description: "Allow buyer to see their commissions"
     participant(i): "org.acme.artistmarket.Buyer"
