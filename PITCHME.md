@@ -13,15 +13,15 @@
 
 ### Model
 
-Participants: Buyer, Artist
+- **Participants**: Buyer, Artist
 
-Assets: Request, Comission
+- **Assets**: Request, Comission
 
-Transactions: RequestTx, CommissionTx
+- **Transactions**: RequestTx, CommissionTx
 
-- Transactions just publish the Request/Comission to the network.
+Transactions just publish the Request/Comission to the network.
 
-- A published commission can only be seen by the seller.
+A published commission can only be seen by the seller.
 
 #HSLIDE
 
