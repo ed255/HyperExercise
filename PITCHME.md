@@ -3,7 +3,25 @@
 
 #HSLIDE
 
+- Marketplace for artists to sell commissions that fulfill individual requests.
+
+- A buyer will submit a request for a particular artists with a price and description.
+
+- The artist may fulfill a request and get paid for the commission.
+
 #HSLIDE
+
+### Model
+
+Participants: Buyer, Artist
+
+Assets: Request, Comission
+
+Transactions: RequestTx, CommissionTx
+
+- Transactions just publish the Request/Comission to the network.
+
+- A published commission can only be seen by the seller.
 
 #HSLIDE
 
