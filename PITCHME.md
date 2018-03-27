@@ -7,8 +7,6 @@
 
 #HSLIDE
 
-Model
-
 ```
 participant Buyer identified by email { ...  }
 participant Artist identified by email { ...  }
